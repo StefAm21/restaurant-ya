@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RestaurantYa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <header>
+    <%= render "shared/navbar" %>
+  </header>
+
+  <body>
+    <div class="contenedor">
+      <%= render "shared/flashes" %>
+      <%= yield %>
+    </div>
+  </body>
+
+  <footer>
+    <%= render "shared/footer" %>
+  </footer>
+</html>
+
+
